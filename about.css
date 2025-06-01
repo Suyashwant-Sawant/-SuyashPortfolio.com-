@@ -1,0 +1,112 @@
+.about-section {
+    background-color: #121212;    color: #e0e6f0;
+    min-height: 90vh;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+.about-content {
+  max-width: 1200px;
+  
+  padding: 40px 50px;
+  border-radius: 15px;
+  /* Only colored border glow/shadow */
+  box-shadow: 0 0 10px 3px rgba(0, 173, 181, 0.6);
+  /* Also keep border if you want a clear edge */
+  border: 2px solid rgba(0, 173, 181, 0.8);
+  color: black; /* make text black */
+}
+  /* Heading */
+  .animated-text h1 {
+    font-size: 3rem;
+    color: #00adb5;
+    margin-bottom: 25px;
+    text-align: center;
+    letter-spacing: 1.2px;
+  }
+
+  /* Intro Paragraph */
+  .intro {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    text-align: center;
+    font-weight: 500;
+    color: #a0c4c7;
+  }
+
+  /* Section Blocks */
+  .section-block {
+    margin-bottom: 35px;
+  }
+
+  .section-block h2 {
+    font-size: 1.8rem;
+    color: #00adb5;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #00adb5;
+    padding-bottom: 6px;
+    letter-spacing: 0.5px;
+  }
+
+  .section-block p {
+    font-size: 1rem;
+    color: #d3d8de;
+    line-height: 1.5;
+  }
+
+  /* Quote Block */
+  .quote-block blockquote {
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #7fffd4;
+    border-left: 4px solid #00adb5;
+    padding-left: 15px;
+    margin: 10px 0 0 0;
+  }
+
+  /* Button */
+  .btn {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 14px 40px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #000;
+    background-color: #00adb5;
+    border-radius: 40px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    display: block;
+    width: fit-content;
+    user-select: none;
+  }
+
+  .btn:hover {
+    background-color: #00cfc8;
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    .about-content {
+      padding: 30px 25px;
+    }
+
+    .animated-text h1 {
+      font-size: 2.4rem;
+    }
+
+    .section-block h2 {
+      font-size: 1.5rem;
+    }
+
+    .btn {
+      padding: 12px 30px;
+      font-size: 1rem;
+    }
+  }

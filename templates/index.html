@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Suyashwant | Portfolio</title>
+    <link rel="stylesheet" href="static/style.css"> <!-- Relative link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+    <div class="logo">Suyashwant</div>
+
+    <div class="nav-right">
+        <ul class="nav-links">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="social-icons" id="Back">
+            <span>|</span>
+            <a href="https://instagram.com/sawantsuyashwant" target="_blank"><i class="fab fa-instagram"></i></a>
+            <span>|</span>
+            <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <span>|</span>
+            <a href="https://github.com/Suyashwant-Sawant" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+</nav>
+
+    </header>
+
+    <section class="hero" id="Home">
+        <div class="hero-text">
+            <h5>Hello, I'm <span>Suyashwant</span></h5>
+            <h1>A passionate Full Stack Developer & Data Analyst</h1>
+            <p>A motivated and detail-oriented IT graduate with a Bachelor of Science in Information Technology. Passionate about software development, problem- solving, and continuous learning. Seeking an opportunity to apply technical skills and knowledge in a dynamic environment.
+                
+            </p><br>
+            <div class="hero-buttons">
+    <a href="#projects" class="btn">View My Work</a>
+    <a href="{{ url_for('download_resume') }}" class="btn re">Download Resume</a>
+
+</div>
+
+        </div>
+        <div class="hero-img">
+            <img src="{{ url_for('static', filename='images/new-removebg-preview (1) (1).png') }}" alt="Suyashwant" class="profile-img">
+        </div>
+    </section>
+    <section class="about-section">
+    <div class="about-content">
+      <div class="animated-text">
+        <h1 id="about">About Me</h1>
+        <p class="intro">
+          I'm <strong>Suyashwant</strong>, a passionate <em>Full Stack Developer</em> &amp; <em>Data Analyst</em> based in India. I specialize in creating powerful web applications and insightful dashboards.
+        </p>
+
+        <div class="section-block">
+          <h2>Journey</h2>
+          <p>
+            I started exploring technology during my BSc in Information Technology. From building smart car systems with Arduino to analyzing data in Power BI, my passion lies in combining creativity with logic.
+          </p>
+        </div>
+
+        <div class="section-block">
+          <h2 >Goals</h2>
+          <p>
+            My aim is to become a skilled full-stack developer who builds real-world, impactful applications. I'm also keen on contributing to open-source projects and data-driven solutions.
+          </p>
+        </div>
+
+        <div class="section-block">
+          <h2>Fun Facts</h2>
+          <p>
+            I love chess, learning AI tools, and improving Arduino projects.<br>
+            I enjoy editing tech reels and UI designs in my free time.
+          </p>
+        </div>
+
+        <div class="section-block quote-block">
+          <h2>Quote</h2>
+          <blockquote>
+            “Code is like humor. When you have to explain it, it’s bad.” – Cory House
+          </blockquote>
+        </div>
+
+        <a href="#Back" class="btn">Back to Home</a>
+      </div>
+    </div>
+  </section>
+<section class="projects-section">
+    <h1 id="projects">Projects</h1>
+
+    <div class="project-box" >
+      <img src="{{url_for('static',filename='images/Coffee.png')}}" alt="Coffee Cafe" onclick="toggleProject(this)" />
+      <h3>Coffee Cafe</h3>
+      <p class="description" onclick="toggleProject(this)">
+        A modern digital coffee shop website designed to showcase a coffee menu, take customer orders, and provide a seamless user experience. 
+        Built using HTML, CSS, and JavaScript, the site includes a product catalog, cart functionality, QR code integration, and responsive design.
+      </p>
+    </div>
+
+    <div class="project-box">
+      <img src="{{url_for('static',filename='images/UI.png')}}" alt="GameSoft" onclick="toggleProject(this)" />
+      <h3>GameSoft</h3>
+      <p class="description" onclick="toggleProject(this)">
+        GameSoft is a dynamic gaming website built using Java, JSP, HTML, CSS, JavaScript, and MySQL. 
+        It features a game catalog with interactive visuals, a feedback system, and a responsive dark theme. 
+        Backend is handled with Java & JSP, while MySQL stores game and user data.
+      </p>
+    </div>
+
+    <div class="project-box">
+      <img src="{{url_for('static',filename='images/Car.jpg')}}" alt="Arduino Smart Car" onclick="toggleProject(this)" />
+      <h3>Arduino Smart Car</h3>
+      <p class="description" onclick="toggleProject(this)">
+        The Arduino Smart Car is a microcontroller-based vehicle developed using Arduino, ultrasonic sensors, and Bluetooth modules. 
+        It detects obstacles, avoids collisions, and can be wirelessly controlled via a smartphone. Perfect for robotics and IoT learning.
+      </p>
+    </div>
+
+    <div class="project-box">
+      <img src="{{url_for('static',filename='images/Battle_Tank.png')}}" alt="Battle Tank" onclick="toggleProject(this)" />
+      <h3>Battle Tank</h3>
+      <p class="description" onclick="toggleProject(this)">
+        Battle Tank is a 1D Java-based shooting game where the player controls a tank to hit enemy targets by adjusting angle and power. 
+        Developed in core Java, the game helps understand logic, control structures, and basic game development concepts.
+      </p>
+    </div>
+  </section>
+    <div class="container">
+    <h1 id="skills">Skills</h1>
+
+    <section class="skill-section">
+      <h2>Frontend</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="fab fa-html5 skill-icon html-icon" title="HTML"></i>
+           <p class="skill-label">HTML</p>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-css3-alt skill-icon css-icon" title="CSS"></i>
+          <p class="skill-label">CSS</p>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-js skill-icon js-icon" title="JavaScript"></i>
+          <p class="skill-label">JavaScript</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="skill-section">
+      <h2>Backend</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="fab fa-java skill-icon java-icon" title="Java"></i>
+          <p class="skill-label">Java</p>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-python skill-icon python-icon" title="Python"></i>
+          <p class="skill-label">Python</p>
+        </div>
+        <div class="skill-card">
+          <img src="{{url_for('static',filename='images/flask.png')}}" alt="Flask" class="skill-icon flask-icon" title="Flask" />
+          <p class="skill-label">Flask</p>
+           
+        </div>
+          <div class="skill-card">
+      <i class="fas fa-database skill-icon sql-icon" title="SQL"></i>
+      <p class="skill-label">SQL</p>
+    </div>
+    <div class="skill-card">
+      <img src="{{url_for('static',filename='images/mysql.png')}}" alt="MySQL" class="skill-icon mysql-icon" title="MySQL" />
+      <p class="skill-label">MySQL</p>
+    </div>
+   <div class="skill-section">
+  <h2>Operating Systems</h2>
+  <div class="skills-grid">
+    <!-- Windows -->
+    <div class="skill-card">
+      <i class="fab fa-windows skill-icon windows-icon"></i>
+      <span class="skill-label">Windows</span>
+    </div>
+
+    <!-- Linux -->
+    <div class="skill-card">
+      <i class="fab fa-linux skill-icon linux-icon"></i>
+      <span class="skill-label">Linux</span>
+    </div>
+  </div>
+</div>
+      </div>
+    </section>
+    </div>
+    <section>
+       <div class="contact-container" id="contact">
+    <h1>Contact Me</h1>
+    <div class="contact-content">
+      <form class="contact-form" method="POST" action="/submit_contact">
+  <div class="form-row">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+  </div>
+  <textarea name="message" placeholder="Your Message" required></textarea>
+  <button type="submit">Submit</button>
+</form>
+      <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <p><strong>Email:</strong> suyashwants@email.com</p>
+        <p><strong>Phone:</strong> +91 7045763857</p>
+        <p><strong>Location:</strong> Mumbai, India</p>
+      </div>
+    </div>
+  </div>
+    </section>
+  <script>
+    function toggleProject(clickedElement) {
+      const projectBox = clickedElement.parentElement;
+      const img = projectBox.querySelector("img");
+      const description = projectBox.querySelector(".description");
+
+      if (clickedElement.tagName === "IMG") {
+        img.style.display = "none";
+        description.style.display = "block";
+      } else if (clickedElement.classList.contains("description")) {
+        img.style.display = "block";
+        description.style.display = "none";
+      }
+    }
+  </script>
+
+
+</body>
+</html>

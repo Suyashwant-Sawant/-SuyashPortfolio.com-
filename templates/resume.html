@@ -1,0 +1,22 @@
+<!-- templates/resume.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume | Suyashwant</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        iframe {
+            width: 100%;
+            height: 100vh;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <iframe src="{{ url_for('static', filename='files/resume.pdf') }}"></iframe>
+</body>
+</html>
